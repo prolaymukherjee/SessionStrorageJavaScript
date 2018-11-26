@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is JavaScript</title>
+	</head>
+	<body>
+	<div id="result"></div>
+		<script>
+			if (typeof(Storage) !== "undefined") {
+				// Store
+				sessionStorage.setItem("lastname", "Prolay");
+			   // Retrieve
+				document.getElementById("result").innerHTML = sessionStorage.getItem("lastname");
+               } else {
+				document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+               }
+			   
+			   
+			   
+		</script>
+	</body>
+</html>
